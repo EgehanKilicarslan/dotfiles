@@ -24,4 +24,4 @@ packages:
     - jdk8-temurin
     - jdk17-temurin
     - jdk21-temurin
-    - osu-lazer
+    - osu-lazer-bin
