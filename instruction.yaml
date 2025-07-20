@@ -17,6 +17,7 @@ packages:
     - pixi
     - prismlauncher
     - dbeaver
+    - maven
 
   aur:
     - vesktop
