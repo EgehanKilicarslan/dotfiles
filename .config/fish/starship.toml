@@ -1,0 +1,53 @@
+add_newline = true  # Add newline after prompt
+
+format = '''
+[┌](fg:primary)$directory$git_branch$git_status$conda$python
+[└─󰁔](fg:primary) '''
+
+palette = "modern"
+
+[palettes.modern]
+primary = "#8fa1b3"      # Main prompt color
+directory = "#6b7b8f"    # Directory text
+branch = "#a3b1cc"       # Git branch name
+git_status = "#8fa1b3"   # Git status symbols
+conda_env = "#b0c4de"    # Conda environment
+python_ver = "#9bb7d4"   # Python version
+
+[directory]
+format = ' [ $path]($style)'
+truncation_length = 3         # Max path segments shown
+truncate_to_repo = true       # Truncate to git repo root
+read_only = " 󰌾"
+style = "bold fg:directory"
+
+[git_branch]
+symbol = " "
+style = "bold fg:branch"
+format = ' [$symbol$branch]($style)'
+
+[git_status]
+style = "bold fg:git_status"
+format = '([\[$all_status$ahead_behind\]]($style))'
+# Status icons for git changes
+conflicted = "⚔ "
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count} "
+untracked = "${count} "
+stashed = "${count} "
+modified = "${count} "
+staged = "${count} "
+renamed = "➜${count} "
+deleted = "✘${count} "
+
+[conda]
+symbol = " "
+style = "bold fg:conda_env"
+format = ' [$symbol$environment]($style)'
+detect_env_vars = ["PIXI_ENVIRONMENT_NAME"]
+
+[python]
+symbol = " "
+style = "bold fg:python_ver"
+format = ' [$symbol$version]($style)'

@@ -1,0 +1,27 @@
+link:
+  - source: .config/fish
+    target: ~/.config/fish
+
+  - source: .config/pixi
+    target: ~/.config/pixi
+
+packages:
+  pacman:
+    - ttf-firacode-nerd
+    - ttf-hack-nerd
+    - ttf-noto-nerd
+    - eza
+    - fish
+    - sshfs
+    - starship
+    - pixi
+    - prismlauncher
+    - dbeaver
+
+  aur:
+    - vesktop
+    - visual-studio-code-bin
+    - jdk8-temurin
+    - jdk17-temurin
+    - jdk21-temurin
+    - osu-lazer
