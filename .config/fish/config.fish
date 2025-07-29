@@ -9,7 +9,7 @@ if status is-interactive
 
     # Initialize Starship prompt for Fish shell
     starship init fish | source
-
-    # Initialize Micromamba
-    $MAMBA_EXE shell hook --shell fish --root-prefix $MAMBA_ROOT_PREFIX | source
 end
+
+# Initialize Micromamba
+$MAMBA_EXE shell hook --shell fish --root-prefix $MAMBA_ROOT_PREFIX | source
