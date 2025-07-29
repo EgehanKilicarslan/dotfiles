@@ -1,4 +1,4 @@
-add_newline = true  # Add newline after prompt
+add_newline = true # Add newline after prompt
 
 format = '''
 [┌](fg:primary)$directory$git_branch$git_status$conda$python
@@ -7,12 +7,12 @@ format = '''
 palette = "modern"
 
 [palettes.modern]
-primary = "#8fa1b3"      # Main prompt color
-directory = "#6b7b8f"    # Directory text
-branch = "#a3b1cc"       # Git branch name
-git_status = "#8fa1b3"   # Git status symbols
-conda_env = "#b0c4de"    # Conda environment
-python_ver = "#9bb7d4"   # Python version
+primary = "#8fa1b3"    # Main prompt color
+directory = "#6b7b8f"  # Directory text
+branch = "#a3b1cc"     # Git branch name
+git_status = "#8fa1b3" # Git status symbols
+conda_env = "#b0c4de"  # Conda environment
+python_ver = "#9bb7d4" # Python version
 
 [directory]
 format = ' [ $path]($style)'
@@ -45,7 +45,6 @@ deleted = "✘${count} "
 symbol = " "
 style = "bold fg:conda_env"
 format = ' [$symbol$environment]($style)'
-detect_env_vars = ["PIXI_ENVIRONMENT_NAME"]
 
 [python]
 symbol = " "

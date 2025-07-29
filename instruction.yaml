@@ -18,8 +18,11 @@ packages:
     - prismlauncher
     - dbeaver
     - maven
+    - speech-dispatcher
+    - libreoffice-fresh
 
   aur:
+    - micromamba-bin
     - vesktop
     - visual-studio-code-bin
     - jdk8-temurin

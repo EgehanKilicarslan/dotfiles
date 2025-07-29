@@ -44,4 +44,10 @@ set -U fish_color_pager_prefix    "#81a1c1"
 set -U fish_color_pager_completion "#d8dee9"
 
 # Set the Starship configuration file path
-set -x STARSHIP_CONFIG ~/.config/fish/starship.toml
+set -gx STARSHIP_CONFIG ~/.config/fish/starship.toml
+
+# Set the Micromamba path
+set -gx MAMBA_EXE "/usr/bin/micromamba"
+set -gx MAMBA_ROOT_PREFIX "/home/egehan/.local/share/mamba"
+set -gx CONDARC ~/.config/mamba/mambarc
+
