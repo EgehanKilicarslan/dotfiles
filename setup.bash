@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 base_dir=$(pwd)
-yaml_file="$base_dir/dotfiles.yaml"
+yaml_file="$base_dir/instruction.yaml"
 
 # Check if 'yq' is installed
 cleanup_yq=0
