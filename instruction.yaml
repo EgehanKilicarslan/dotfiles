@@ -2,9 +2,6 @@ link:
   - source: .config/fish
     target: ~/.config/fish
 
-  - source: .config/pixi
-    target: ~/.config/pixi
-
 packages:
   pacman:
     - ttf-firacode-nerd
@@ -14,18 +11,20 @@ packages:
     - fish
     - sshfs
     - starship
-    - pixi
     - prismlauncher
     - dbeaver
     - maven
     - speech-dispatcher
     - libreoffice-fresh
+    - vesktop-bin
+    - zen-browser
+    - tonelib-gfx-bin
+    - timeshift
 
   aur:
-    - micromamba-bin
-    - vesktop
     - visual-studio-code-bin
     - jdk8-temurin
     - jdk17-temurin
     - jdk21-temurin
     - osu-lazer-bin
+    - spotify
